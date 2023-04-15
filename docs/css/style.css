@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html{
+    color: white;
+    font-family:  'Roboto', Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg ,#2BD11D, #00E99E,#7AFAE9 );
+}
+
+input{
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+    font-size: x-large;
+    background-color: #7AFAE9;
+    border: solid;
+}
+
+.day{
+    color: #666;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: azure;
+    width: 140px;
+    height: 180px;
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.day:hover{
+    transition: 200ms;
+    background: white;
+    box-shadow: 0 0 0 16px white;
+}
+.day:not(:hover){
+    transition: 2s;
+}
+
+
+button {
+    margin: -56px;
+    padding: 0px;
+    text-align: center;
+    font-size: x-large;
+    border-radius: 10px;
+    width: 45px;
+    vertical-align: middle;
+    border: solid;
+    margin-bottom: -47px;
+}
+
+
+button:hover {
+    background-color: black;
+    color: #7AFAE9;
+}
+
+ol>li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    color: black;
+    background-color: #7AFAE9;
+    padding: 8px;
+    margin: 10px;
+    margin-inline: 100px;
+    border-radius: 10px;
+    border: solid;
+    cursor: move;
+}
+ol>li:hover{
+    color:azure;
+}
+ol>li:not(:hover){
+    transition: 1s;
+    color:black;
+}
+
+ol>li.over{
+    border:  3px dotted #666;
+}
+
+.container{
+    margin-inline: 140px;
+    text-align: auto;
+    background-color: 9CC379;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.controller{
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    text-align: center  ;
+}
+
+.nav{
+    margin-left: 50px;
+}
+.nav>span{
+    margin-left: 20px;
+}
+
+#dropHolder{
+    text-align: center;
+    background-color:rgb(235, 65, 35);
+    position: fixed;
+    padding: 10px;
+    border-radius: 10px;
+    right: 0;
+    top: 50%;
+    width: 200px;
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
+.slowHide{
+    animation: slowHide 2s linear forwards;
+}
+
+@keyframes slowHide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
